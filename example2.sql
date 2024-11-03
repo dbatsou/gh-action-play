@@ -10,7 +10,6 @@ MERGE INTO [Config].[FeatureSwitches] AS Target
     (@maxid + 30, N'Switch5', 0, 1, 'XXXXX','TeamV'),
     (@maxid + 30, N'Switch5', 0, 1, 'XXXXX','TeamV'),
     (@maxid + 30, N'Switch5', 0, 1, 'XXXXX','TeamV'),
-    (@maxid + 30, N'Switch5', 0, 1, 'XXXXX','TeamV'),
 )   AS Source ([FeatureSwitchId], [Name], [IsEnabled], [NhVersion], [Description], [CategoryName])
     ON Target.Name = Source.Name
     WHEN MATCHED THEN
