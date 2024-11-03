@@ -3,7 +3,7 @@ name: Run Script on SQL Update
 on:
   push:
     branches:
-      - improv/content-check
+      - main
     paths:
       - example2.sql
 
