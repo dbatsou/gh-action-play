@@ -1,0 +1,22 @@
+name: Run Script on SQL Update
+
+on:
+  push:
+    branches:
+      - improv/content-check
+    paths:
+      - example2.sql
+
+jobs:
+  run-script:
+    name: Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Run script.ps1
+        shell: pwsh
+        run: |
+          ./script.ps1

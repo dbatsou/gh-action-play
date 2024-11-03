@@ -1,0 +1,12 @@
+comment:
+  on-update: recreate
+  header: |
+    Hey there, we've noticed you have updated this file, if you have X could you please check Y?
+
+  snippets:
+    - id: any-markdown-file-changed
+      files:
+        - 'file.txt'
+      body: |
+        It looks like you're changing a Markdown file.
+        Make sure your changes follow our [language guidelines](some-link) when writing documentation.
